@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		*{margin: 0;padding: 0;list-style: none;}
+		.demo{display: flex;width: 1200px;margin:30px auto;border:1px solid red;}
+		.item{flex: 1;height: 21px;background: pink;border:1px solid #eee;}
+		.item span{display: block;width: 100%;text-align: center;}
+		.item span:hover{background: red;}
+		.list{display: none;border:1px solid red;}
+		.list li{text-align:center;}
+		.list li:hover{background: orangered;}
+
+		.item:hover .list{display: block;}
+	</style>
+</head>
+<body>
+	<div class="demo">
+		<div class="item1 item">
+			<span>导航一</span>
+			<div class="list">
+				<ul>
+					<li>子元素1</li>
+					<li>子元素2</li>
+					<li>子元素3</li>
+					<li>子元素4</li>
+				</ul>
+			</div>
+		</div>
+		<div class="item2 item">
+			<span>导航二</span>
+			<div class="list">
+				<ul>
+					<li>子元素1</li>
+					<li>子元素2</li>
+					<li>子元素3</li>
+					<li>子元素4</li>
+				</ul>
+			</div>
+		</div>
+		<div class="item3 item">
+			<span>导航二</span>
+		</div>
+	</div>
+</body>
+</html>
